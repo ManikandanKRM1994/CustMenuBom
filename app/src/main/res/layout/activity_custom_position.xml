@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_simple_circle_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".CustomPositionActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Only Custom Piece Positions" />
+
+    <com.krm.custmenubom.menu.BoomMenuButton
+        android:id="@+id/bmb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bmb_buttonEnum="ham"
+        app:bmb_buttonPlaceEnum="buttonPlace_ham_4"
+        app:bmb_hamWidth="10dp"
+        app:bmb_highlightedColor="@android:color/darker_gray"
+        app:bmb_normalColor="@android:color/white"
+        app:bmb_piecePlaceEnum="piecePlace_custom" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Only Custom Button Positions" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.krm.custmenubom.menu.BoomMenuButton
+            android:id="@+id/bmb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bmb_buttonEnum="simpleCircle"
+            app:bmb_buttonPlaceEnum="buttonPlace_custom"
+            app:bmb_highlightedColor="@android:color/darker_gray"
+            app:bmb_normalColor="@android:color/white"
+            app:bmb_piecePlaceEnum="piecePlace_dot_3_1" />
+
+        <com.krm.custmenubom.menu.BoomMenuButton
+            android:id="@+id/bmb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bmb_buttonEnum="textOutsideCircle"
+            app:bmb_buttonPlaceEnum="buttonPlace_custom"
+            app:bmb_highlightedColor="@android:color/holo_blue_bright"
+            app:bmb_normalColor="@android:color/holo_blue_dark"
+            app:bmb_piecePlaceEnum="piecePlace_share" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="Custom Piece and Button Positions" />
+
+    <com.krm.custmenubom.menu.BoomMenuButton
+        android:id="@+id/bmb4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bmb_buttonEnum="textInsideCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_custom"
+        app:bmb_highlightedColor="@android:color/darker_gray"
+        app:bmb_normalColor="@android:color/white"
+        app:bmb_piecePlaceEnum="piecePlace_custom" />
+
+</LinearLayout>

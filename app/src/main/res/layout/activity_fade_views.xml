@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_simple_circle_button"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".FadeViewsActivity">
+
+    <com.krm.custmenubom.menu.BoomMenuButton
+        android:id="@+id/bmb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bmb2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        app:bmb_buttonEnum="simpleCircle"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_9_1"
+        app:bmb_dotRadius="0dp"
+        app:bmb_piecePlaceEnum="piecePlace_dot_9_1">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/butterfly" />
+
+    </com.krm.custmenubom.menu.BoomMenuButton>
+
+    <com.krm.custmenubom.menu.BoomMenuButton
+        android:id="@+id/bmb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        app:bmb_buttonEnum="ham"
+        app:bmb_buttonPlaceEnum="buttonPlace_ham_4"
+        app:bmb_hamHeight="0dp"
+        app:bmb_hamWidth="0dp"
+        app:bmb_piecePlaceEnum="piecePlace_ham_4">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:src="@drawable/dolphin" />
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="BOOM!"
+            android:textColor="@android:color/white"
+            android:textSize="10sp" />
+
+    </com.krm.custmenubom.menu.BoomMenuButton>
+
+</RelativeLayout>
